@@ -46,3 +46,9 @@ Lets take a look inside the `src` folder
  ```
  npm run dev
  ```
+
+
+
+ //  flow  of main code 
+
+ // -->modal-->repo-->service-->controller-->routes-->main-route-file--->server file

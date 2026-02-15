@@ -1,9 +1,19 @@
 const express = require('express');
-
-const { InfoController } = require('../../controllers');
-
 const router = express.Router();
 
-router.get('/info', InfoController.info);
+
+// ----------------- DECLARE ROUTES -----------------//
+const sampleUserRoutes = require("./sample-user-routes")
+// ----------------- DECLARE ROUTES -----------------//
+
+
+
+// ----------------- ROUTES -----------------//
+router.use("/sample" , sampleUserRoutes)
+// ----------------- ROUTES -----------------//
+
+
+
+
 
 module.exports = router;
